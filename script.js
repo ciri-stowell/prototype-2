@@ -30,6 +30,10 @@ backButton.click(function() {
     $(".menu-button-x").show();
     $(".nav-container").show();
     $('.nav-dropdown ul').each(function() {
+      if($(this).css("display") === "block") {
+        $(this).hide();
+        menu.css('margin-left', '0')
+      }
     });
 
   });
