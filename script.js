@@ -58,7 +58,10 @@ $("#hamburger").click(function() {
   $("#main-menu").toggle();
   });
 
+
 $("#main-menu a").click(function() {
+  $(".menu-button").hide();
+  $(".menu-button-x").show();
   $('.nav-dropdown ul').each(function() {
     if($(this).css("display") === "block") {
       $(this).hide();
@@ -68,8 +71,7 @@ $("#main-menu a").click(function() {
 
   $("#main-menu").toggle();
   $(".nav-container").toggle();
-  $(".menu-button").hide();
-  $(".menu-button-x").show();
+
 
 });
 
