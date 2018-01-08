@@ -68,6 +68,8 @@ $("#main-menu a").click(function() {
 
   $("#main-menu").toggle();
   $(".nav-container").toggle();
+  $(".menu-button").hide();
+  $(".menu-button-x").show();
 
 });
 
