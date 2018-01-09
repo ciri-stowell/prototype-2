@@ -102,9 +102,9 @@ body {
 }
 
 .page-title {
-    position: absolute;
+    position: fixed;
     margin: auto;
-    top:200px;
+    top:220px;
     padding:25px;
     font-size: 35px;
     font-family: "brandon-grotesque", "sans serif";
