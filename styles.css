@@ -15,13 +15,15 @@
 
 #main-menu {
   background: #fff;
+  top:60px;
   font-size: 40px;
   color: #203D7C;
   font-family: "open sans";
   font-weight: 500;
   display: none;
-  z-index: 2;
-  position: relative;
+  z-index: 11;
+  position: fixed;
+  width: 100%;
   height:800px;
 }
 
@@ -47,6 +49,22 @@
     margin: auto;
 }
 
+#menu-head {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    position: fixed;
+    z-index: 3;
+    top: 70px;
+}
+
+#menu-holder {
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
 
 .page-img {
   padding-top: 20px;
@@ -57,18 +75,23 @@
 }
 
 #page {
-  padding-top: 20px;
+  padding-top: 0px;
   margin:auto;
 }
 
 body {
   margin:auto;
   max-width: 100%;
+  position: relative;
+  top: 60px;
 }
 
 
 #page-header {
   background: #f6f6f6;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 #logo {
@@ -81,7 +104,7 @@ body {
 .page-title {
     position: absolute;
     margin: auto;
-    top:330px;
+    top:200px;
     padding:25px;
     font-size: 35px;
     font-family: "brandon-grotesque", "sans serif";
@@ -95,7 +118,6 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
-    margin: 10px;
     text-decoration: none;
     font-family: sans-serif;
     color: #2D4FBF;
@@ -106,7 +128,6 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
-    margin: 10px;
     text-decoration: none;
     font-family: FontAwesome;
     color: #2D4FBF;
@@ -143,7 +164,7 @@ body {
 }
 
 .nav-container {
-  top:20px;
+  top:60px;
   max-width: 460px;
   position: relative;
   font-family: "open sans";
